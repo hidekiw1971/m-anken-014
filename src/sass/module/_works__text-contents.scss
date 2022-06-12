@@ -1,0 +1,8 @@
+@use "global" as *;
+.works__text-contents {
+  @include mq(md) {
+    text-align: left;
+  }
+  @include mq(xl) {
+  }
+}

@@ -1,0 +1,9 @@
+@use "global" as *;
+.works__contents--box {
+  @include mq(md) {
+    display: flex;
+    margin: 0 rem(25);
+  }
+  @include mq(xl) {
+  }
+}

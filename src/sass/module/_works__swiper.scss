@@ -1,0 +1,8 @@
+@use "global" as *;
+.works__swiper {
+  @include mq(md) {
+    margin-right: rem(32);
+  }
+  @include mq(xl) {
+  }
+}

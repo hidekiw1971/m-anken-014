@@ -1,0 +1,9 @@
+@use "global" as *;
+.btn {
+  display: inline-block;
+  border: solid 1px #fff;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

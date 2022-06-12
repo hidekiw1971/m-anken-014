@@ -1,0 +1,7 @@
+@use "global" as *;
+.works__inner {
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
