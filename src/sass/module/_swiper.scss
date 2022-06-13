@@ -1,9 +1,18 @@
 @use "global" as *;
 .swiper {
-  width: rem(557);
-  height: rem(389);
+  max-width: rem(557);
+  width: 100%;
+  // height: rem(389);
   @include mq(md) {
   }
   @include mq(xl) {
   }
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  width: auto;
+  bottom: initial;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
