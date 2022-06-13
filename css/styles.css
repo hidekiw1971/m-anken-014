@@ -62,7 +62,7 @@ a {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default padding */
@@ -134,7 +134,7 @@ select {
 img:not([alt]) {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
 }
 
 /* フォームリセット */
@@ -156,13 +156,13 @@ textarea {
   resize: vertical;
 }
 
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   display: none;
 }
 
-input[type=submit],
-input[type=button],
+input[type="submit"],
+input[type="button"],
 label,
 button,
 select {
@@ -182,11 +182,20 @@ select::-ms-expand {
   background-color: #f00;
 }
 .swiper {
-  width: 557px;
-  width: 34.8125rem;
-  height: 389px;
-  height: 24.3125rem;
+  max-width: 557px;
+  max-width: 34.8125rem;
+  width: 100%;
 }
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  width: auto;
+  bottom: auto;
+  bottom: initial;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
 @media screen and (min-width: 768px) {
   .works__contents--bg {
     width: 70%;
@@ -204,9 +213,14 @@ select::-ms-expand {
     margin: 0 1.5625rem;
   }
 }
+.works__swiper {
+  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
+}
 @media screen and (min-width: 768px) {
   .works__swiper {
     margin-right: 2rem;
+    position: relative;
   }
 }
 @media screen and (min-width: 768px) {
