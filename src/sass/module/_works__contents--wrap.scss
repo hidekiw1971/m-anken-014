@@ -1,7 +1,7 @@
 @use "global" as *;
-.works__contents--box {
+.works__contents--wrap {
   @include mq(md) {
-    height: 100%;
+    position: relative;
   }
   @include mq(xl) {
   }

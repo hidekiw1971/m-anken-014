@@ -62,7 +62,7 @@ a {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Remove default padding */
@@ -134,7 +134,7 @@ select {
 img:not([alt]) {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
   -webkit-filter: blur(10px);
-  filter: blur(10px);
+          filter: blur(10px);
 }
 
 /* フォームリセット */
@@ -156,13 +156,13 @@ textarea {
   resize: vertical;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   display: none;
 }
 
-input[type="submit"],
-input[type="button"],
+input[type=submit],
+input[type=button],
 label,
 button,
 select {
@@ -193,7 +193,7 @@ select::-ms-expand {
   bottom: initial;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 @media screen and (min-width: 768px) {
@@ -206,11 +206,31 @@ select::-ms-expand {
   }
 }
 @media screen and (min-width: 768px) {
-  .works__contents--box {
+  .works__contents--box-wrap {
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 1.5625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works__contents--box {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works__contents--wrap {
+    position: relative;
   }
 }
 .works__swiper {
@@ -224,7 +244,18 @@ select::-ms-expand {
   }
 }
 @media screen and (min-width: 768px) {
-  .works__text-contents {
+  .works__text-contents--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works__text-contents--wrap {
     text-align: left;
   }
 }

@@ -1,0 +1,15 @@
+@use "global" as *;
+.works__contents--box-wrap {
+  @include mq(md) {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 rem(25);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @include mq(xl) {
+  }
+}
