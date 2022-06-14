@@ -2,6 +2,8 @@
 .works__contents--wrap {
   @include mq(md) {
     position: relative;
+    display: flex;
+    justify-content: center;
   }
   @include mq(xl) {
   }

@@ -207,6 +207,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .works__contents--box-wrap {
+    max-width: 74.375rem;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,7 +221,6 @@ select::-ms-expand {
     margin: 0 1.5625rem;
     position: absolute;
     top: 0;
-    left: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -231,6 +231,12 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .works__contents--wrap {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .works__swiper {
