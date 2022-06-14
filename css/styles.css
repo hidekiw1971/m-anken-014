@@ -206,11 +206,37 @@ select::-ms-expand {
   }
 }
 @media screen and (min-width: 768px) {
-  .works__contents--box {
+  .works__contents--box-wrap {
+    max-width: 74.375rem;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 1.5625rem;
+    position: absolute;
+    top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works__contents--box {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works__contents--wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .works__swiper {
@@ -224,7 +250,18 @@ select::-ms-expand {
   }
 }
 @media screen and (min-width: 768px) {
-  .works__text-contents {
+  .works__text-contents--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works__text-contents--wrap {
     text-align: left;
   }
 }

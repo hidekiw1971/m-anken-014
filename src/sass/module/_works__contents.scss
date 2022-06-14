@@ -1,7 +1,6 @@
 @use "global" as *;
-.works__contents--box {
+.works__contents {
   @include mq(md) {
-    height: 100%;
   }
   @include mq(xl) {
   }
