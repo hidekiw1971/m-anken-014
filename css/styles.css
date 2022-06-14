@@ -62,7 +62,7 @@ a {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Remove default padding */
@@ -134,7 +134,7 @@ select {
 img:not([alt]) {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
   -webkit-filter: blur(10px);
-  filter: blur(10px);
+          filter: blur(10px);
 }
 
 /* フォームリセット */
@@ -156,13 +156,13 @@ textarea {
   resize: vertical;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   display: none;
 }
 
-input[type="submit"],
-input[type="button"],
+input[type=submit],
+input[type=button],
 label,
 button,
 select {
@@ -193,7 +193,7 @@ select::-ms-expand {
   bottom: initial;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 @media screen and (min-width: 768px) {
