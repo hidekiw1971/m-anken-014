@@ -1,9 +1,9 @@
 @use "global" as *;
-.works__text-contents--inner {
+.works__contents--wrap {
   @include mq(md) {
+    position: relative;
     display: flex;
-    align-items: center;
-    height: 100%;
+    justify-content: center;
   }
   @include mq(xl) {
   }
